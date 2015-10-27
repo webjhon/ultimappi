@@ -92,12 +92,13 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 text-center">
         <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle">
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
+          
       </div>
     </div>
   </div>
