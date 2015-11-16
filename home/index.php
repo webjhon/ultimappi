@@ -93,12 +93,24 @@
     </div>
     <div class="row">
       <div class="col-md-12 text-center">
-        <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle">
+          <img alt="Links de Navegação" src="../img/roda_links.png" class="img-circle img-thumbnail" id="roda_link">
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
           
+      </div>
+    </div>
+          <div class="row" id="nomobile">
+      <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+          <div class="navbar-text pull-left" id="rodape">
+              <ul class="list-inline text-center">
+                  <a href="#"><li class="col-md-3">INSTRUÇÃO AOS AUTORES</li></a>
+                  <a href="#"><li class="col-md-3">LOGIN</li></a>
+                  <a href="#"><li class="col-md-3">CONTATO</li></a>
+                  <a href="#"><li class="col-md-3">AJUDA</li></a>
+              </ul>
+          </div>          
       </div>
     </div>
   </div>

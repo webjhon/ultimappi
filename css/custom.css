@@ -1,1 +1,38 @@
+#rodape {
+    width: 100%;
+}
+#rodape ul li{
+   padding-left: 5%;
+   padding-right: 5%;
+}
+
+
+//Definição dos links do rodapé.
+#rodape a:link{}
+#rodape a:visited{color: white;}
+#rodape a:hover{color: greenyellow;}
+#rodape a:active{}
+
+
+@media (max-width:320px) { 
+    /* smartphones, iPhone, portrait 480x320 phones */
+    #nomobile{
+        display:none;
+    }
+}
+@media (max-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    #nomobile{
+        display:none;
+    }
+}
+@media (max-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    #nomobile{
+        display:none;
+    }
+}
+
+
+
 
