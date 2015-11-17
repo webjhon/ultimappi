@@ -8,7 +8,14 @@
   <!-- AQUI FICAM AS ALTERAÇÕES FEITAS MANUALMENTE NA PAGINA -->
   
   <link href="../css/custom.css" rel="stylesheet"> <!-- Alterações no CSS em Geral -->
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
+  <link href="../css/timeline.css" rel="stylesheet">
+  <link href="../css/metisMenu.min.css" rel="stylesheet">
   <script src="../js/custom.js"></script> <!-- Alterações no JAVASCRIPT em Geral -->
+  <script src="../js/sb-admin-2.js"></script> <!-- Alterações no JAVASCRIPT em Geral -->
+  <script src="../js/morris-data.js"></script> <!-- Alterações no JAVASCRIPT em Geral -->
+  <script src="../js/flot-data.js"></script> <!-- Alterações no JAVASCRIPT em Geral -->
+  
 
   
 

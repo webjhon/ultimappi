@@ -14,7 +14,7 @@
     </div>
     <div class="row">
       <div class="col-md-4 col-md-offset-4">
-          <form class="form-signin" action="../banco/importabanco.php" method="POST">
+          <form class="form-signin" method="POST" action="../banco/importabanco.php">
           <h2 class="text-center login-title"> Acesso Restrito</h2>
           <label for="login" class="sr-only"></label>
           <input type="text" name="backend_login" class="form-control" autofocus="" required="" placeholder="Digite o Login"><br>
@@ -22,6 +22,7 @@
           <input type="password" name="backend_senha" class="form-control" autofocus="" required="" placeholder="Digite a senha"><br>
           <button id="login_envia" name="login_envia" class="btn btn-lg btn-primary btn-block">ENTRAR</button>
         </form>
+          
       </div>
     </div>
   </div>
