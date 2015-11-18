@@ -87,7 +87,6 @@
 		
     </div>
     
-	
     <div class="row" id="nomobile">
 		<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
 			<div class="navbar-text pull-left" id="rodape">
