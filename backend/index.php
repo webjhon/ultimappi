@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
+	<title>Backend - Acesso Professores</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <?php require_once '../dependencias/config.php';?> 			
-    <title>Backend - Acesso Professores.</title>
+    <?php require_once '../dependencias/config.php';?>
 </head>
 
 <body>
 
     <div id="wrapper">
 
-        <!-- Navigation -->
+        <!-- Menus de Navegação -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
+            
+			<!-- Home Painel -->
+			<div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">Painel de Controle - RD3PI</a>
             </div>
-            <!-- /.navbar-header -->
+            <!-- FIM Home Painel /.navbar-header -->
 
+			<!-- Icones do Painel -->
             <ul class="nav navbar-top-links navbar-right">
+			
+				<!-- Icone menu mensagens -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -79,7 +84,9 @@
                     </ul>
                     <!-- /.dropdown-messages -->
                 </li>
-                <!-- /.dropdown -->
+                <!-- FIM Icone menu mensagens /.dropdown -->
+				
+				<!-- Icone menu controles -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -158,7 +165,9 @@
                     </ul>
                     <!-- /.dropdown-tasks -->
                 </li>
-                <!-- /.dropdown -->
+                <!-- FIM Icone menu controles /.dropdown -->
+				
+				<!-- Icone menu alertas -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -218,7 +227,9 @@
                     </ul>
                     <!-- /.dropdown-alerts -->
                 </li>
-                <!-- /.dropdown -->
+                <!-- FIM Icone menu alertas /.dropdown -->
+				
+				<!-- Icone menu perfil -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -234,16 +245,20 @@
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>
-                <!-- /.dropdown -->
+                <!-- FIM Icone menu perfil /.dropdown -->
+				
             </ul>
-            <!-- /.navbar-top-links -->
+            <!-- FIM Icones do Painel - /.navbar-top-links -->
 
+			<!-- Menu lateral -->
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
+                        
+						<!-- Campo pesquisar -->
+						<li class="sidebar-search">
                             <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
+                                <input type="text" class="form-control" placeholder="Pesquisar...">
                                 <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
@@ -252,14 +267,20 @@
                             </div>
                             <!-- /input-group -->
                         </li>
+						<!-- FIM Campo pesquisar -->
+						
+						<!-- Menu Home -->
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Home</a>
                         </li>
+						<!-- FIM Menu Home -->
+						
+						
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Gerenciar<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <a href="flot.php">Flot Charts</a>
                                 </li>
                                 <li>
                                     <a href="morris.html">Morris.js Charts</a>
