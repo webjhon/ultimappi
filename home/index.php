@@ -83,7 +83,7 @@
 		
 		<div class="col-md-12">
 		
-			<img id="Image-Maps-Com-mapa-categorias" src="http://www.image-maps.com/m/private/64691/68530-b2db8o1hsgctu8etvl79m8i9t6_roda_links.png" border="0" width="2095" height="2096" orgWidth="2095" orgHeight="2096" usemap="#mapa-categorias" alt="" class="img-responsive center-block tamanho"/>
+			<img id="Image-Maps-Com-mapa-categorias" src="http://www.image-maps.com/m/private/64691/68530-b2db8o1hsgctu8etvl79m8i9t6_roda_links.png" border="0" width="2095" height="2096" orgWidth="2095" orgHeight="2096" usemap="#mapa-categorias" alt="" />
 			<map name="mapa-categorias" id="ImageMapsCom-mapa-categorias">
 				<area shape="rect" coords="2093,2094,2095,2096" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_[msg]Er" />
 				<area  alt="" title="Projetos" href="http://www.image-maps.com/" shape="poly" coords="1045,381,1045,2,854,20,659,76,489,163,325,293,181,460,83,636,36,774,10,914,2,1047,389,1049,425,820,498,675,630,528,779,438,907,396" style="outline:none;" target="_self"     />
