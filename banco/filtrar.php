@@ -12,7 +12,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : '';
 
 
 
-$geral = "Select * from projeto"; 
+$geral = "Select * from projeto where titulo like '%$titulo%'"; 
 
 
 
