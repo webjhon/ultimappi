@@ -4,9 +4,9 @@
 $server = "localhost";
 $user_db = "root";
 $password_db = "";
-$database = "ppi";
+$database = "ppi2";
 
-error_reporting(0); //Ocultar erros
+//error_reporting(0); //Ocultar erros
 
 function conecta_banco (){
     global $server, $user_db, $password_db, $database;
@@ -28,7 +28,7 @@ if ($conecta){
 }
 
 function fecha_banco (){
-    mysql_close($conecta);
+    mysql_close();
 }
 
 

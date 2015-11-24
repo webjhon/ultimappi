@@ -22,7 +22,7 @@
 		
 		$_POST['anexo'] = $fileName1.'.'.$fileType1;
 		
-		$query = "insert into ppi.projeto (titulo, autores, orientadores, palavrachave, ano, resumo, arquivos, anexo) values
+		$query = "insert into projeto (titulo, autores, orientadores, palavrachave, ano, resumo, arquivos, anexo) values
 		        ('{$_POST['titulo']}', '{$_POST['autores']}', '{$_POST['orientadores']}', '{$_POST['palavrachave']}', '{$_POST['ano']}', '{$_POST['resumo']}', '{$_POST['arquivos']}', '{$_POST['anexo']}')";
 		//file_put_contents("log.txt",$query);
 		if(!$ref=mysql_query($query)) {
@@ -56,5 +56,5 @@
 			}
 		}
 		
-		mysql_close(); 
+		mysql_close();
 		header('location:cadastro.php?status=1');

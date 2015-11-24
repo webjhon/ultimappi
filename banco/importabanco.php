@@ -8,7 +8,7 @@ $senha = isset($_POST['backend_senha']) ? $_POST['backend_senha'] : '';
 
 conecta_banco();
 if (isset($_POST['login_envia'])) {
-$buscar = "SELECT * FROM usuario WHERE login = '$login' and senha = '$senha'";
+$buscar = "SELECT * FROM usuarios WHERE login = '$login' and senha = '$senha'";
 $verifica = mysql_query($buscar);
 
 if (mysql_num_rows($verifica) <= 0) {
