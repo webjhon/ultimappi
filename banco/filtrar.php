@@ -18,20 +18,21 @@ $geral = "select * from projeto where titulo like '%".$titulo."%' and autores li
 function resultados ($clausula){
 conecta_banco();
 $sql = mysql_query($clausula);
-    
 echo '<h2>Resultados</h2>';
-while($exibe = mysql_fetch_assoc($sql)){
-  //echo $exibe["titulo"] .'<br>';
-echo '<div class="list-group" id=retorno_filtro>';
-    echo '<a href="../home/projeto.php?id='.$exibe["id"].'" class="list-group-item">';
-        echo '<h4 class="list-group-item-heading" id = "retorno_filtro">'.$exibe["titulo"].'</h4>';
-        echo '<p class="list-group-item-text">'.$exibe["resumo"].'</p>';
-    echo '</a>';
-echo '</div>';    
-
-    
-}
+    while($exibe = mysql_fetch_assoc($sql)){
+        //echo $exibe["titulo"] .'<br>';
+        echo '<div class="list-group" id=retorno_filtro>';
+            echo '<a href="../home/projeto.php?id='.$exibe["id"].'" class="list-group-item">';
+                echo '<h4 class="list-group-item-heading" id = "retorno_filtro">'.$exibe["titulo"].'</h4>';
+                echo '<p class="list-group-item-text">'.$exibe["autores"].'</p>';
+            echo '</a>';
+        echo '</div>';  
 fecha_banco();
 }
+}
+ 
+
+
+
 
 ?>

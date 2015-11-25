@@ -90,9 +90,7 @@
         <div class="col-md-offset-2 col-md-8">
         <?php
         if (isset($_POST['botao_pesquisar'])) {
-        resultados($geral);
-        
-        
+            resultados($geral);
         }
        ?>
         </div>

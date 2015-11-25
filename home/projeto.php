@@ -55,7 +55,7 @@
 										</tr>
 										<tr>
 											<th>Resumo</th>
-											<td><em class="glyphicon glyphicon-pencil"></em><textarea class="form-control" id="textarea" name="textarea"><?=$row[arquivos]?></textarea></td>
+                                                                                        <td><em class="glyphicon glyphicon-pencil"></em><textarea class="form-control" readonly="true" id="textarea" name="textarea"><?=$row[resumo]?></textarea></td>
 										</tr>
 										<tr>
 											<th>Anexos</th>
