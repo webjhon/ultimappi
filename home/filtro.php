@@ -16,7 +16,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">Pesquisa geral</label>
         <div class="col-md-6">
-          <input id="textinput" name="pequisa_geral" type="text" placeholder="Conteúdo" class="form-control input-md" required="">
+          <input id="textinput" name="pequisa_geral" type="text" placeholder="Conteúdo" class="form-control input-md" >
 
         </div>
       </div>
@@ -41,7 +41,7 @@
 
       <!-- Text input-->
       <div class="form-group">
-        <label class="col-md-4 control-label" for="textinput">Assunto</label>
+        <label class="col-md-4 control-label" for="textinput">Palavras Chave</label>
         <div class="col-md-6">
           <input id="textinput" name="assunto" type="text" placeholder="Assunto, conteúdo" class="form-control input-md">
 
@@ -66,6 +66,7 @@
         <label class="col-md-4 control-label" for="selectbasic">Ano</label>
         <div class="col-md-6">
           <select id="selectbasic" name="ano" class="form-control">
+            <option value="">Selecionar Ano</option>
             <option value="2012">2012</option>
             <option value="2013">2013</option>
             <option value="2014">2014</option>
