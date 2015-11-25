@@ -20,15 +20,15 @@ conecta_banco();
 $sql = mysql_query($clausula);
     
 echo '<h2>Resultados</h2>';
-echo '<div class="list-group">';
 while($exibe = mysql_fetch_assoc($sql)){
   //echo $exibe["titulo"] .'<br>';
-    echo '<a href="#" class="list-group-item">';
-        echo '<h4 class="list-group-item-heading">First List Group Item Heading</h4>';
-        echo '<p class="list-group-item-text">List Group Item Text</p>';
+echo '<div class="list-group" id=retorno_filtro>';
+    echo '<a href="../home/projeto.php?id='.$exibe["id"].'" class="list-group-item">';
+        echo '<h4 class="list-group-item-heading" id = "retorno_filtro">'.$exibe["titulo"].'</h4>';
+        echo '<p class="list-group-item-text">'.$exibe["resumo"].'</p>';
     echo '</a>';
 echo '</div>';    
-       
+
     
 }
 fecha_banco();

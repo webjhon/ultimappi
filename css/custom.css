@@ -31,6 +31,31 @@
 }
 
 
+/* unvisited link */
+#retorno_filtro a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+#retorno_filtro a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+#retorno_filtro a:hover {
+    background-color: #337ab7;
+    color: white;
+}
+
+/* selected link */
+#retorno_filtro a:active {
+    text-decoration: none;
+}
+
+
+
+
+
 /*Definição dos links do rodapé.*/
 #rodape a:link{}
 #rodape a:visited{color: white;}
