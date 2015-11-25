@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <?php require_once '../dependencias/config.php'; ?> <!-- Dependencias para correto funcionamento -->
-  <title></title>
+  <title>RD3PI - Repositório de Projetos de Prática Profissional Integrada</title>
 </head>
 <body>
 	<div class="container-fluid">
@@ -16,13 +16,13 @@
 	
 		<div class="row">
 			<div class="col-md-12">
-				<nav class="navbar navbar-default" role="navigation">
+				<nav class="navbar navbar-inverse " role="navigation">
 			
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.php">RD3PI</a>
+						<a class="navbar-brand bg-primary" href="index.php" id="titulo">RD3PI</a>
 					</div>
 	
-					<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li>
 								<a href="projeto.php">O projeto</a>
@@ -50,7 +50,7 @@
 								</ul>
 							</li>
 						</ul>
-						
+						<!--#############################################################################
 						<form class="navbar-form navbar-right" role="search">
 							<div class="form-group">
 									<button type="submit" class="btn btn-default btn-primary">
@@ -59,6 +59,7 @@
 								<input class="form-control" type="text">
 							</div>
 						</form>
+						##############################################################################-->
 					</div>
 				</nav>
 		</div>
