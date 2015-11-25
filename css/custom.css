@@ -1,3 +1,14 @@
+/*Definição titulo navbar*/
+#titulo{
+	color: white;
+}
+
+#titulo:hover{
+	color: #337ab7;
+}
+
+
+/*Definição rodape*/
 #rodape {
     width: 100%;
 }
@@ -6,6 +17,8 @@
    padding-right: 5%;
 }
 
+
+/*Definição classe tamanho*/
 .tamanho{
 	max-height: 50%;
 	max-width: 50%;
@@ -13,7 +26,8 @@
 	width: auto;
 }
 
-//Definição dos links do rodapé.
+
+/*Definição dos links do rodapé.*/
 #rodape a:link{}
 #rodape a:visited{color: white;}
 #rodape a:hover{color: greenyellow;}

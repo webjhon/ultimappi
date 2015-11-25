@@ -26,12 +26,12 @@ fecha_banco();
 }
 
 
-resultados($geral);
+
 
 
 //Teste lógico para definir a clausula, e chamar a função
 
-
+resultados($geral);
 
 
 
