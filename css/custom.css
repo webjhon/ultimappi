@@ -17,6 +17,10 @@
    padding-right: 5%;
 }
 
+/*Definição de quebra de linha*/
+.quebra{
+	word-wrap: break-word;
+}
 
 /*Definição classe tamanho*/
 .tamanho{
