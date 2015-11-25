@@ -6,7 +6,6 @@
 		<?php require_once '../dependencias/config.php'; ?> <!-- Dependencias para correto funcionamento -->  
 	</head>
   
-  
 		<?php
 			require_once "../banco/conecta.php";
 			conecta_banco();
@@ -18,81 +17,54 @@
 		?>
 
 	<body>
-	
+			
 		<form id='form1' class="form-horizontal well" action="salvarCadastro.php" method="POST" enctype="multipart/form-data">
 		<fieldset>
-			<!-- Formulario de Cadastro de Projetos -->
-			<legend>Resultado da busca</legend>
-	
-		<!-- Text input Titulo do Projeto-->
-		<div class="form-group">
-			<label class="col-md-4 control-label" for="input_titulo">Título do Projeto <br><i class="glyphicon glyphicon-superscript"></i></label>
-				<div class="col-md-6 bg-primary">
-					<?=$row[titulo]?>
-				</div>
-		</div>
-	
-		<!-- Text input Autores-->
-		<div class="form-group">
-			<label class="col-md-4 control-label" for="input_autores">Autor (es) <br><i class="glyphicon glyphicon-edit"></i></label>
-				<div class="col-md-6 bg-info">
-				<?=$row[autores]?>
-	
-				</div>
-		</div>
-	
-		<!-- Text input Orientadores-->
-		<div class="form-group">
-			<label class="col-md-4 control-label" for="input_orientadores">Orientador (es) <br><i class="glyphicon glyphicon-comment"></i></label>
-				<div class="col-md-6 bg-primary">
-					<?=$row[orientadores]?>
-		
-				</div>
-		</div>
-	
-		<!-- Text input Palavras Chave-->
-		<div class="form-group">
-			<label class="col-md-4 control-label" for="input_keyword">Palavras-chave <br><i class="glyphicon glyphicon-flag"></i></label>
-				<div class="col-md-6 bg-info">
-					<?=$row[palavrachave]?>
+			<!-- Resultado de Cadastro de Projetos -->
+			<legend>Dados do projeto</legend>
+
 			
+				<!-- ######   Tabela de resultados   ###### -->
+				<div class="col-md-1 row-clearfix"></div>
+				<div class="col-md-10 row-clearfix">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Título do Projeto</th>
+								<td><em class="glyphicon glyphicon-superscript blue"></em> <?=$row[titulo]?></td>
+							</tr>
+							<tr>
+								<th>Autores</th>
+								<td><em class="glyphicon glyphicon-edit blue"></em> <?=$row[autores]?></td>
+							</tr>
+							<tr>
+								<th>Orientadores</th>
+								<td><em class="glyphicon glyphicon-comment blue"></em> <?=$row[orientadores]?></td>
+							</tr>
+							<tr>
+								<th>Palavras-chave</th>
+								<td><em class="glyphicon glyphicon-flag blue"></em> <?=$row[palavrachave]?></td>
+							</tr>
+							<tr>
+								<th>Ano</th>
+								<td><em class="glyphicon glyphicon-calendar blue"></em> <?=$row[ano]?></td>
+							</tr>
+							<tr>
+								<th>Link de arquivos</th>
+								<td><em class="glyphicon glyphicon-file blue"></em> <?=$row[arquivos]?></td>
+							</tr>
+							<tr>
+								<th>Resumo</th>
+								<td><em class="glyphicon glyphicon-pencil blue"></em> <?=$row[resumo]?></td>
+							</tr>
+							<tr>
+								<th>Anexos</th>
+								<td><em class="glyphicon glyphicon-paperclip blue"></em> <a href='<?="../backend/Anexo/projeto_$_GET[id]/$row[anexo]";?>' download><?=$row[anexo]?></a></td>
+							</tr>
+						</thead>
+					</table>
 				</div>
-		</div>
-	
-		<!-- Select Basic Anos-->
-		<div class="form-group">
-			<label class="col-md-4 control-label" for="select_ano">Ano <br><i class="glyphicon glyphicon-calendar"></i></label>
-				<div class="col-md-6 bg-primary">
-					<?=$row[ano]?>
-				</div>
-		</div>
-	
-		<!-- Text input Link externo-->
-		<div class="form-group">
-			<label class="col-md-4 control-label" for="input_link">Link de arquivos <br><i class="glyphicon glyphicon-file"></i></label>
-				<div class="col-md-6 bg-info">
-					<?=$row[arquivos]?>
-				
-				</div>
-		</div>
-	
-		<!-- Textarea Resumo-->
-		<div class="form-group">
-			<label class="col-md-4 control-label" for="textarea_resumo">Resumo <br><i class="glyphicon glyphicon-pencil"></i></label>
-				<div class="col-md-6 bg-primary">
-					<?=$row[resumo]?>
-				</div>
-		</div>
-		
-		
-		<!-- Anexo -->
-		<div class="form-group">
-			<label class="col-md-4 control-label" for="input_link">Anexos <br><i class="glyphicon glyphicon-paperclip"></i></label>
-		
-				<div class="col-md-6 bg-info">
-					<a href='<?="../backend/Anexo/projeto_$_GET[id]/$row[anexo]";?>' download><?=$row[anexo]?></a>
-				</div>
-		</div>
+				<div class="col-md-1 row-clearfix"></div>
 	
 		</fieldset>
 		</form>
