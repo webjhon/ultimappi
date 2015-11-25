@@ -6,12 +6,12 @@
   <title>FILTRO DE BUSCA</title>
 </head>
 <body>
-    <form class="form-horizontal" method="POST" action="../banco/filtrar.php">
+    <form class="form-horizontal well" method="POST" action="../banco/filtrar.php">
     <fieldset>
 
       <!-- Form Name -->
       <legend>Filtro de Projetos</legend>
-
+	  
       <!-- Text input-->
       <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">Pesquisa geral</label>
