@@ -6,7 +6,7 @@ $user_db = "root";
 $password_db = "";
 $database = "ppi2";
 
-//error_reporting(0); //Ocultar erros
+error_reporting(0); //Ocultar erros
 
 function conecta_banco (){
     global $server, $user_db, $password_db, $database;
